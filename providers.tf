@@ -5,13 +5,6 @@ terraform {
       version = "~> 4.0"
     }
   }
-  cloud {
-    organization = "omare-terraform"
-
-    workspaces {
-      name = "aws-two-tier-tf-cluod-cicd"
-    }
-  }
 }
 
 provider "aws" {
