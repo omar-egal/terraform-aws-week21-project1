@@ -2,7 +2,7 @@
 
 module "networking" {
   source           = "./networking"
-  vpc_cidr_in         = var.vpc_cidr
+  vpc_cidr_in      = var.vpc_cidr
   public_sn_count  = 3
   private_sn_count = 3
   max_subnets      = 20
