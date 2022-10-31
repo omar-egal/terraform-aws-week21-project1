@@ -4,7 +4,7 @@ module "networking" {
   source           = "./networking"
   vpc_cidr_in      = var.vpc_cidr
   public_sn_count  = 3
-  private_sn_count = 3
+  private_sn_count = 4
   max_subnets      = 20
   public_cidrs_in  = [for i in range(2, 255, 2) : cidrsubnet("10.0.0.0/16", 8, i)]
   private_cidrs_in = [for i in range(1, 255, 2) : cidrsubnet("10.0.0.0/16", 8, i)]
