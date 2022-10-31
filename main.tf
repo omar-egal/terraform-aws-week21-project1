@@ -15,7 +15,7 @@ module "ec2" {
   public_subnet_ids  = module.networking.public_subnet_ids
   private_subnet_ids = module.networking.private_subnet_ids
   bastion_sg_id      = module.security.bastion_sg_id
-  alb_sg_id          = module.security.alb_sg_id
+  traffic_sg_id      = module.security.traffic_sg_id
   alb_tg_arn         = module.elb.alb_tg_arn
   instance_type      = "t2.micro"
   key_name           = var.key_name

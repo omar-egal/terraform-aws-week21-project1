@@ -54,7 +54,7 @@ resource "aws_launch_template" "servers_alb_lt" {
   image_id               = data.aws_ami.amazon_linux_2.id
   instance_type          = var.instance_type
   key_name               = var.key_name
-  vpc_security_group_ids = tolist([var.alb_sg_id])
+  vpc_security_group_ids = tolist([var.traffic_sg_id])
   user_data              = var.user_data
   tag_specifications {
     resource_type = "instance"
