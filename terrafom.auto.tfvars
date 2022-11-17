@@ -1,3 +1,3 @@
-specific_ip = "176.45.47.207/32"
+specific_ip = "Your personal IP address"
 
 key_name = "luit_key"
